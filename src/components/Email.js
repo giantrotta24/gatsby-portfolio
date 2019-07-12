@@ -32,6 +32,7 @@ const Email = props => (
               display: 'inline-block',
               color: props.color,
               backgroundColor: '#111111',
+              fontFamily: props.messageFont
             }}
           >
             Contact Me
