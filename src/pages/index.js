@@ -20,14 +20,17 @@ const IndexPage = ({ data }) => {
     messageFont,
     message,
     social,
-    email
+    email,
   } = data.site.siteMetadata;
   return (
     <React.Fragment>
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
-        <meta name="description" content={title + '&middot' + message + '&middot' + author} />
+        <meta
+          name="description"
+          content={title + '&middot' + message + '&middot' + author}
+        />
         <title>{title}</title>
         <link
           rel="stylesheet"

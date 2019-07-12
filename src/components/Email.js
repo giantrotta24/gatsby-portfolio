@@ -17,7 +17,7 @@ const Email = props => (
         <li
           style={{
             padding: '0.5rem',
-            borderRadius: '2px'
+            borderRadius: '2px',
           }}
           className="button"
         >
@@ -25,16 +25,17 @@ const Email = props => (
             className="link"
             href={props.email}
             style={{
-                padding: "8px 12px",
-                borderRadius: "2px",
-                textDecoration: 'none',
-                fontWeight: "bold",
-                display: "inline-block",
-                color: props.color,
-                backgroundColor: '#111111',
-
+              padding: '8px 12px',
+              borderRadius: '2px',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              display: 'inline-block',
+              color: props.color,
+              backgroundColor: '#111111',
             }}
-          >Contact Me</a>
+          >
+            Contact Me
+          </a>
         </li>
       </ul>
     )}
