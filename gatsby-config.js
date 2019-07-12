@@ -1,8 +1,15 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Under Construction`,
-    description: `Thanks for stopping by! I'm currently revamping my portfolio, check back again soon.`,
+    message: `I'm currently revamping my portfolio, check back again soon.`,
     author: `Gianfranco Trotta`,
+    titleFont: "Oswald",
+    messageFont: "Roboto",
+    color: "#e7e6e6",
+    social: ["https://github.com/giantrotta24", "https://www.linkedin.com/in/gianfranco-trotta-862a4b155/", "https://twitter.com/FootballKennel"],
+    email:"mailto:gian@giantrotta.dev"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,12 +28,28 @@ module.exports = {
         name: `under-construction`,
         short_name: `construction`,
         start_url: `/`,
-        background_color: `#111111`,
-        theme_color: `#111111`,
+        background_color: `#e7e6e6`,
+        theme_color: `#e7e6e6`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets\/svg/,
+          include: path.resolve(__dirname, 'src/assets/svg'),
+          include: /assets(\/|\\)svg/
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+  ]
 }
