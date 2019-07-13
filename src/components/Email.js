@@ -26,13 +26,13 @@ const Email = props => (
             href={props.email}
             style={{
               padding: '8px 12px',
-              borderRadius: '2px',
+              borderRadius: '12px',
               textDecoration: 'none',
               fontWeight: 'bold',
               display: 'inline-block',
-              color: props.color,
-              backgroundColor: '#111111',
-              fontFamily: props.messageFont
+              color: "#111111",
+              backgroundColor: props.color,
+              fontFamily: props.messageFont,
             }}
           >
             Contact Me

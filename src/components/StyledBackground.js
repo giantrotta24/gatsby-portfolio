@@ -10,7 +10,7 @@ const BackgroundSection = ({ children, className }) => (
         home: file(relativePath: { eq: "home.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
