@@ -1,15 +1,8 @@
-const path = require('path');
-
 module.exports = {
   siteMetadata: {
-    title: `Under Construction`,
-    message: `I'm currently revamping my portfolio, check back again soon.`,
-    author: `Gianfranco Trotta`,
-    titleFont: "Oswald",
-    messageFont: "Roboto",
-    color: "#e7e6e6",
-    social: ["https://github.com/giantrotta24", "https://www.linkedin.com/in/gianfranco-trotta-862a4b155/", "https://twitter.com/FootballKennel"],
-    email:"mailto:gian@giantrotta.dev"
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,31 +18,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `under-construction`,
-        short_name: `construction`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#e7e6e6`,
-        theme_color: `#e7e6e6`,
-        display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets\/svg/,
-          include: path.resolve(__dirname, 'src/assets/svg'),
-          include: /assets(\/|\\)svg/
-        }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
-  ]
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+  ],
 }
