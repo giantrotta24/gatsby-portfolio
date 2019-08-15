@@ -2,29 +2,26 @@ import React from 'react';
 import Transition from 'react-transition-group/Transition';
 
 import { defaultStyle, transitionStyles } from '../transitions';
+import config from '../../config';
 
-const Title = props => (
+import SubHeading from '../components/SubHeading';
+
+const Title = () => (
   <Transition in appear={true} timeout={400}>
     {state => (
       <div
         style={{
-          padding: '.5em',
           ...defaultStyle,
           ...transitionStyles[state],
         }}
       >
-        <h1
-          style={{
-            fontFamily: props.titleFont,
-            color: props.color,
-            fontSize: '3em',
-            fontWeight: 'normal',
-            margin: '0',
-            textAlign: 'center',
-          }}
-        >
-          {props.title}
-        </h1>
+        <div className="mx-auto text-center">
+          <h1 className="mx-auto my-0 text-uppercase">
+            {config.heading}
+            {config.author}.
+          </h1>
+          <SubHeading />
+        </div>
       </div>
     )}
   </Transition>

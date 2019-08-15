@@ -1,15 +1,12 @@
 const path = require('path');
+const config = require('./config');
 
 module.exports = {
   siteMetadata: {
-    title: `Under Construction`,
-    message: `I'm currently revamping my portfolio, check back again soon.`,
-    author: `Gianfranco Trotta`,
-    titleFont: "Oswald",
-    messageFont: "Roboto",
-    color: "#e7e6e6",
-    social: ["https://github.com/giantrotta24", "https://www.linkedin.com/in/gianfranco-trotta-862a4b155/", "https://twitter.com/FootballKennel"],
-    email:"mailto:gian@giantrotta.dev"
+    title: config.siteTitle,
+    author: config.author,
+    social: 'https://github.com/giantrotta24',
+    color: config.manifestColor,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,7 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -25,16 +22,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `under-construction`,
-        short_name: `construction`,
+        name: `gatsby-portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#e7e6e6`,
-        theme_color: `#e7e6e6`,
+        background_color: config.manifestColor,
+        theme_color: config.manifestColor,
         display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
+    'gatsby-plugin-sass',
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
