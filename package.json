@@ -28,6 +28,7 @@
     "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.0",
     "react-social-icons": "^4.1.0",
+    "react-tippy": "^1.2.3",
     "react-transition-group": "^4.2.1",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^4.3.2"
