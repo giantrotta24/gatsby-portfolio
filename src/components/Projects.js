@@ -1,7 +1,6 @@
 import React from 'react';
 // import mixitup from 'mixitup';
 
-import Portfolio from './Portfolio';
 import MacMockUp from '../assets/images/outdoor-gear-bank.png';
 
 const Projects = () => (
