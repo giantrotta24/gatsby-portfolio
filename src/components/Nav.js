@@ -87,7 +87,7 @@ class Nav extends Component {
                   element="skills"
                 >
                   <a className="nav-link" href="#skills">
-                    Skills
+                    Tools
                   </a>
                 </Scroll>
               </li>

@@ -5,7 +5,7 @@ import Title from '../components/Title';
 import Nav from '../components/Nav';
 import About from '../components/About';
 import Projects from '../components/Projects';
-import Skills from '../components/Skills';
+import Skills from '../components/Tools';
 import Signup from '../components/Signup';
 import SocialLinks from '../components/SocialLinks';
 import Footer from '../components/Footer';
