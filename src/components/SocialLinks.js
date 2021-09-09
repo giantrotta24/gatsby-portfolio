@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import config from '../../config';
 
-import ResumePDF from '../assets/documents/Technical-Resume-August-2019.pdf';
+import ResumePDF from '../assets/documents/Technical-Resume-September-2021.pdf';
 
 const SocialLinks = () => {
   return (
